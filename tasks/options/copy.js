@@ -24,6 +24,14 @@ module.exports = {
     dest: 'tmp/result/assets'
   },
 
+  //copy fonts
+  fontsToResult: {
+    expand: true,
+    cwd: 'vendor/font-awesome/fonts',
+    src: ['**'],
+    dest: 'tmp/result/assets/fonts'
+  },
+
   // Assembles everything in `tmp/result`.
   // The sole purpose of this task is to keep things neat. Gathering everything in one
   // place (tmp/dist) enables the subtasks of dist to only look there. Note: However,
@@ -45,9 +53,7 @@ module.exports = {
     }, {
       src: ['config/environment.js', 'config/environments/production.js'],
       dest: 'tmp/result/'
-    }
-
-    ]
+    }   ]
   },
 
   imageminFallback: {
