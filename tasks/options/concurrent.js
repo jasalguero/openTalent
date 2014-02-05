@@ -1,6 +1,7 @@
 module.exports = {
   // Remaining configuration done in Gruntfile.js
   options: {
-    logConcurrentOutput: true
+    logConcurrentOutput: true,
+    limit: 4
   }
 };
