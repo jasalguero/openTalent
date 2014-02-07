@@ -4,6 +4,6 @@ Router.map ->
   @route 'login'
   @route 'logout'
   @resource 'staff', ->
-    @route 'new'
+    @route 'create'
 
 `export default Router`
