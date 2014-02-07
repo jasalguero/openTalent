@@ -1,60 +1,14 @@
-// colors
-
-// We use these as default colors throughout
-//#DC5B21
-//#70AB8F
-//#383127
-$primary-color: #383127 !default;
-$secondary-color: #70AB8F !default;
-$alert-color: #f04124 !default;
-$success-color: #43AC6A !default;
-
-$body-bg: #E4DBBF !default;
-$body-font-color: #383127 !default;
-$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
-$body-font-weight: normal !default;
-$body-font-style: normal !default;
-
+@import 'vars';
 @import 'vendor/foundation/scss/foundation';
-
-$fa-font-path: "fonts" !default;
 @import 'vendor/font-awesome/scss/font-awesome';
-$row-width: 110%;
+@import 'common';
+@import 'main-menu';
 
-body {
-  background-color: #E4DBBF;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCI+CjxmaWx0ZXIgaWQ9Im4iIHg9IjAiIHk9IjAiPgo8ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC43IiBudW1PY3RhdmVzPSIxMCIgc3RpdGNoVGlsZXM9InN0aXRjaCI+PC9mZVR1cmJ1bGVuY2U+CjwvZmlsdGVyPgo8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI0U0REJCRiI+PC9yZWN0Pgo8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgZmlsdGVyPSJ1cmwoI24pIiBvcGFjaXR5PSIwLjQiPjwvcmVjdD4KPC9zdmc+");
-}
 
-.main-title {
-  margin: 4%;
-  margin-bottom: 7%;
-}
 
-nav {
-  .row {
-    margin-bottom: 5%;
-  }
-}
 
-.card {
-  box-sizing: border-box;
-  background-color: white;
-  text-align: left;
-  display: inline-block;
-  padding: 1.5em;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  -webkit-box-sizing: border-box;
-  .card-image {
-    padding: 1.25rem;
-  }
-  .card-label {
-    @extend .text-center;
-    text-transform: uppercase;
-    padding: 0.5rem;
-  }
-}
+
+
+
+
 
